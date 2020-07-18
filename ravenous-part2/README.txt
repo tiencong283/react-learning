@@ -12,8 +12,6 @@ So far, you’ve hard coded business information and rendered it manually. Now w
 
 
 ---
-Let’s review what you’ve done so far:
-
-    Moved business information to App.js
-    Created a list of businesses using an array, rather than repeating components in BusinessList.js
-    Built functionality for the BusinessList component to iterate through the array and return Business components
+Let’s briefly review what you did:
+    Moved business information to the container component (App)
+    Passed information from parent components (App) to child components (BusinessList, Business)
