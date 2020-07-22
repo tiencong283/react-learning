@@ -5,8 +5,8 @@ import BusinessList from "../BusinessList/BusinessList"
 
 function App() {
   return (
-    <div class="App">
-      <h1>ravenous</h1>
+    <div className="App">
+      <h1>ravenous</h1>ame
       <SearchBar />
       <BusinessList />
     </div>
