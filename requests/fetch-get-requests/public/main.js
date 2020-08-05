@@ -11,8 +11,8 @@ const responseField = document.querySelector('#responseField');
 const getSuggestions = () => {
   const wordQuery = inputField.value;
   const endpoint = `${url}${queryParams}${wordQuery}`;
-  
-  fetch(endpoint, {cache: 'no-cache'}).then(response => {
+
+  fetch(endpoint, { cache: 'no-cache' }).then(response => {
     if (response.ok) {
       return response.json();
     }
@@ -27,7 +27,7 @@ const getSuggestions = () => {
 // Clears previous results and display results to webpage
 const displaySuggestions = (event) => {
   event.preventDefault();
-  while(responseField.firstChild){
+  while (responseField.firstChild) {
     responseField.removeChild(responseField.firstChild);
   }
   getSuggestions();
